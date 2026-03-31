@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Product from './Product'
 
 const MainSection = () => {
     const [active, setActive] = useState(true)
@@ -11,7 +12,7 @@ const MainSection = () => {
                     <p>Choose from our curated collection of premium digital products designed</p>
                     <p>to boost your productivity and creativity.</p>
 
-                    <div className="flex shadow-2xl rounded-2xl">
+                    <div className="flex m-2 shadow-2xl rounded-2xl">
                         <button
                             onClick={() => setActive(true)}
                             className={` m-2 p-2 rounded-2xl ${active ? "bg-purple-600 text-white" : "bg-white text-black"}`}>
@@ -27,8 +28,8 @@ const MainSection = () => {
                     </div>
                 </div>
 
-                <div className={active ? "text-white bg-purple-600 p-4 rounded-2xl" : "text-white p-4 rounded-2xl bg-purple-800"}>
-                    {active ? "Products Section" : "Cart Section"}
+                <div >
+                    {active ? <Product /> : "Cart Section"}
                 </div>
             </div>
         </>
