@@ -34,8 +34,6 @@ const Product = () => {
             <span className="text-sm text-gray-400">/{item.billing}</span>
           </h3>
           </div>
-
-          {/* Features */}
           <ul className="mb-6 space-y-2">
             {item.features.map((f, i) => (
               <li key={i} className="text-sm text-gray-600 flex items-center gap-2">
@@ -43,8 +41,6 @@ const Product = () => {
               </li>
             ))}
           </ul>
-
-          {/* Button */}
           <button className="w-full py-3 rounded-xl text-white font-semibold bg-gradient-to-r from-purple-600 to-indigo-500 hover:opacity-90">
             Buy Now
           </button>
