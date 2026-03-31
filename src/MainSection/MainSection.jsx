@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import Product from './Product'
+import Cart from '../Cart/Cart';
 
-const MainSection = () => {
-    const [active, setActive] = useState(true)
-
+const MainSection = ({ cart, addToCart, removeFromCart }) => {
+      const [active, setActive] = useState(true)
+    
+    
     return (
         <>
             <div className='flex text-center items-center flex-col'>
@@ -23,13 +25,13 @@ const MainSection = () => {
                             onClick={() => setActive(false)}
                             className={` m-2 p-2 rounded-2xl ${!active ? "bg-purple-600 text-white" : "bg-white text-black"}`}
                         >
-                            Cart(0)
+                            Cart({cart.length})
                         </button>
                     </div>
                 </div>
 
-                <div >
-                    {active ? <Product /> : "Cart Section"}
+                <div className='w-full'>
+                    {active ? <Product addToCart={addToCart}/> : <Cart cart={cart} removeFromCart={removeFromCart}/>}
                 </div>
             </div>
         </>

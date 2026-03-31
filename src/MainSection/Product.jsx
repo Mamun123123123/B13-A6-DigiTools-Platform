@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-const Product = () => {
+const Product = ({ addToCart }) => {
     const [data,setData] = useState([])
     const fetchData = async()=>{
         let res = await axios.get("/Data.json")
@@ -41,7 +41,7 @@ const Product = () => {
               </li>
             ))}
           </ul>
-          <button className="w-full py-3 rounded-xl text-white font-semibold bg-gradient-to-r from-purple-600 to-indigo-500 hover:opacity-90">
+          <button onClick={() => addToCart(item)} className="w-full py-3 rounded-xl text-white font-semibold bg-gradient-to-r from-purple-600 to-indigo-500 hover:opacity-90">
             Buy Now
           </button>
 
