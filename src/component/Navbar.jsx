@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router'
 import img from "../assets/shopping-cart.png"
 
 const Navbar = ({ cart }) => {
@@ -20,11 +19,11 @@ const Navbar = ({ cart }) => {
 
       <div className={`${menuOpen ? "block" : "hidden"} absolute top-16 left-0 w-full bg-slate-100 md:static md:flex md:w-auto`}>
         <ul className='flex flex-col md:flex-row gap-4 md:gap-6 p-4 md:p-0 items-center'>
-          <li><Link to="/product">Products</Link></li>
-          <li><Link to="/features">Features</Link></li>
-          <li><Link to="/pricing">Pricing</Link></li>
-          <li><Link to="/testimonials">Testimonials</Link></li>
-          <li><Link to="/faq">FAQ</Link></li>
+          <li>Products</li>
+          <li>Features</li>
+          <li>Pricing</li>
+          <li>Testimonials</li>
+          <li>FAQ</li>
         </ul>
       </div>
 

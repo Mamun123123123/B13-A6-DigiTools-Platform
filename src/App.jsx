@@ -7,6 +7,7 @@ import MainSection from './MainSection/MainSection'
 import Started from './Started/Started'
 import SimplePricing from './Simple/SimplePricing'
 import Ready_section from './ready/Ready_section'
+import Footer from './footer/Footer'
 
 const App = () => {
     const [cart, setCart] = useState([]);
@@ -33,6 +34,7 @@ const App = () => {
         <Started />
         <SimplePricing />
         <Ready_section />
+        <Footer />
     </>
   )
 }
