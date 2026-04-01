@@ -5,6 +5,7 @@ import Banner from './banner/Banner'
 import State from './State/State'
 import MainSection from './MainSection/MainSection'
 import Started from './Started/Started'
+import SimplePricing from './Simple/SimplePricing'
 
 const App = () => {
     const [cart, setCart] = useState([]);
@@ -29,6 +30,7 @@ const App = () => {
         addToCart={addToCart}
         removeFromCart={removeFromCart}/>
         <Started />
+        <SimplePricing />
     </>
   )
 }
