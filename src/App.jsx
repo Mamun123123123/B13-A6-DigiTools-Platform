@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Navbar from './component/Navbar'
 import Banner from './banner/Banner'
 import State from './State/State'
@@ -19,7 +20,6 @@ const App = () => {
   }
 };
     const addToCart = (item) => {
-        alert("Cart Added")
     setCart((prev) => [...prev, item]);
   };
 
@@ -35,6 +35,7 @@ const App = () => {
         <SimplePricing />
         <Ready_section />
         <Footer />
+        <ToastContainer position="top-right" autoClose={2000} />
     </>
   )
 }
