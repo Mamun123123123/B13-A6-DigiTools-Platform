@@ -6,6 +6,7 @@ import State from './State/State'
 import MainSection from './MainSection/MainSection'
 import Started from './Started/Started'
 import SimplePricing from './Simple/SimplePricing'
+import Ready_section from './ready/Ready_section'
 
 const App = () => {
     const [cart, setCart] = useState([]);
@@ -31,6 +32,7 @@ const App = () => {
         removeFromCart={removeFromCart}/>
         <Started />
         <SimplePricing />
+        <Ready_section />
     </>
   )
 }
