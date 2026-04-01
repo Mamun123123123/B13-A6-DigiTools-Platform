@@ -4,6 +4,7 @@ import Navbar from './component/Navbar'
 import Banner from './banner/Banner'
 import State from './State/State'
 import MainSection from './MainSection/MainSection'
+import Started from './Started/Started'
 
 const App = () => {
     const [cart, setCart] = useState([]);
@@ -27,6 +28,7 @@ const App = () => {
       <MainSection cart={cart}
         addToCart={addToCart}
         removeFromCart={removeFromCart}/>
+        <Started />
     </>
   )
 }
