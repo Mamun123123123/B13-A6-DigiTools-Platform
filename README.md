@@ -1,16 +1,16 @@
-# React + Vite
+Project Overview – Digitools Platform (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Digitools Platform is a modern web-based tool hub built using React.js, designed to provide users with multiple digital utilities in one place. The platform focuses on delivering a fast, responsive, and user-friendly experience.
 
-Currently, two official plugins are available:
+This frontend application allows users to easily access various productivity tools such as calculators, text utilities, converters, and other web-based tools. The architecture is designed to be scalable and ready for backend integration in the future.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🎯 Key Features:
+⚡ Fast and responsive user interface using React.js
+📱 Fully mobile-friendly and responsive design
+🧭 Clean and intuitive navigation system
+🔄 Reusable and modular component structure
+🛠️ Technology Stack
+React.js (Core UI library)
+React Router DOM (Client-side routing)
+Tailwind CSS / CSS3 (Styling and responsiveness)
+Axios / Fetch API (Data handling and API requests)
